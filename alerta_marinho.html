@@ -1,0 +1,114 @@
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+
+ 
+   <title>Alerta Marinho – Ressaca e Subida do Nível do Mar</title>
+</head>
+<body>
+
+    <!-- Ondas animadas -->
+    <div class="onda"></div>
+    <div class="onda onda2"></div>
+
+    <header>
+        <div>
+            
+        </div>
+        <h1>🌊 ALERTA MARINHO</h1>
+        <p>Monitoramento – Ressacas e Subida do Nível do Mar</p>
+
+        <nav class="nav-bar">
+            <div class="cardsnav"><a href="#" id="#Sobre">Sobre</a>
+           </div>
+           <div class="cardsnav"><a href="#" id="#Prevenção">Prevenção</a>
+           </div>
+           <div class="cardsnav"><a href="#" id="#Fênomeno">Fênomeno</a>
+           </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="card" id="cardAlerta">
+            <div class="subconjunto">
+                <div class="cards"><H2>algo</H2>
+            <p>texto</div>p></div>
+                <div class="cards"><H2>algo</H2>
+            <p>texto</div>p></div>
+                <div class="cards"><H2>algo</H2>
+            <p>texto</div>p></div>
+                <div class="cards"><H2>algo</H2>
+            <p>texto</div>p></div>
+            </div>
+
+            <h2>📡 Situação atual da região</h2>
+            <div class="nivel‑mar" id="nivelMar">Nível do mar: 1,20 m</div>
+            <h3>⚠️ Nível de risco: <span id="textoRisco">Baixo</span></h3>
+            <ul id="listaAviso">
+                <li>Sem risco imediato de inundação costeira</li>
+            </ul>
+            <button onclick="simularRiscoMedio()">Simular risco médio (ressaca)</button>
+            <button onclick="simularRiscoAlto()">Simular risco alto (subida do mar)</button>
+            <button onclick="resetarSimulacao()">Resetar</button>
+        </div>
+
+        <div class="card">
+
+            </div class="card">
+            <h2>🛡️ Medidas de Prevenção e Mitigação</h2>
+            <ul>
+                <li>Acompanhar boletim da Defesa Civil e INMET</li>
+                <li>Evitar a faixa da praia, calçadas costeiras e rias em alerta de ressaca</li>
+                <li>Planejar rota de evacuação para regiões baixas próximas ao mar</li>
+                <li>Construção de diques, quebra‑mares e reflorestamento costeiro (soluções estruturais)</li>
+                <li>Monitoramento contínuo da maré e previsão meteorológica</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>ℹ️ Sobre o fenômeno</h2>
+            <p>A ressaca marinha associada à subida do nível do mar causa inundação, erosão costeira e risco para moradores de Joinville e região litorânea. A nossa aplicação serve como sistema de alerta para a população, permitindo agir rapidamente e diminuir os danos causados por esse desastre ambiental.</p>
+        </div>
+
+    <div class="card" id="#Sobre">
+            <h2>ℹ️ Sobre o fenômeno</h2>
+            <p>A ressaca marinha associada à subida do nível do mar causa inundação, erosão costeira e risco para moradores de Joinville e região litorânea. A nossa aplicação serve como sistema de alerta para a população, permitindo agir rapidamente e diminuir os danos causados por esse desastre ambiental.</p>
+        </div>
+    </div>
+<script>
+    let nivelMarElement = document.getElementById("nivelMar");
+    let textoRiscoElement = document.getElementById("textoRisco");
+    let listaAvisoElement = document.getElementById("listaAviso");
+    let cardAlerta = document.getElementById("cardAlerta");
+
+    function resetarSimulacao(){
+        nivelMarElement.innerText = "Nível do mar: 1,20 m";
+        textoRiscoElement.innerText = "Baixo";
+        listaAvisoElement.innerHTML = "<li>Sem risco imediato de inundação costeira</li>";
+        cardAlerta.className = "card alerta‑baixo";
+    }
+
+    function simularRiscoMedio(){
+        nivelMarElement.innerText = "Nível do mar: 2,10 m";
+        textoRiscoElement.innerText = "Médio (possível ressaca)";
+        listaAvisoElement.innerHTML = `
+            <li>✅ Atenção: risco de ondas fortes e encharcamento na orla</li>
+            <li>✅ Fique atento aos avisos da Defesa Civil</li>
+        `;
+        cardAlerta.className = "card alerta‑medio";
+    }
+
+    function simularRiscoAlto(){
+        nivelMarElement.innerText = "Nível do mar: 3,00 m";
+        textoRiscoElement.innerText = "ALTO (subida acentuada do mar)";
+        listaAvisoElement.innerHTML = `
+            <li>🔴 ALERTA: risco elevado de inundação costeira e erosão</li>
+            <li>🔴 Evite a região da orla, siga orientações de evacuação da Defesa Civil</li>
+            <li>🔴 Procure abrigo seguro imediatamente</li>
+        `;
+        cardAlerta.className = "card alerta‑alto";
+    }
+</script>
+</body>
+</html>

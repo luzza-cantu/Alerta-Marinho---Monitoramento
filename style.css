@@ -1,0 +1,162 @@
+ *   {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+    
+    @keyframes ondaAnim {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        header {
+            background:#023047;
+            color:white;
+            padding:20px;
+            text-align:center;
+            position: relative;
+            z-index: 1;
+        }
+        .container {
+            max-width:900px;
+            margin:30px auto;
+            padding:20px;
+            position: relative;
+            z-index:1;
+        }
+
+        .card {
+            background:white;
+            border-radius:16px;
+            padding:24px;
+            margin:20px 0;
+            box-shadow:0 4px 12px #00000022;
+        }
+        .alerta-baixo {
+            border-left:8px solid #2ec4b6;
+        }
+        .alerta-medio {
+            border-left:8px solid #ffb703;
+        }
+        .alerta-alto {
+            border-left:8px solid #fb5607;
+        }
+
+        button {
+            background:#0077b6;
+            color:white;
+            border:none;
+            padding:12px 20px;
+            border-radius:8px;
+            font-size:16px;
+            cursor:pointer;
+            margin:10px 5px;
+        }
+        button:hover {
+            background:#023047;
+        }
+        .cardsnav{
+            display: inline-block;
+            padding: 10px;
+            gap: 10px;
+            background-color: #40697e;
+            border: #2ec4b6;
+            border-radius: 5px;
+            border-width: 5px;
+            
+          
+        }
+
+        .cardsnav a {
+            color: white;
+            font-size: 20px;
+        }
+        .nav-bar{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding-top: 10px;
+        }
+        .cards{
+            display: inline-block;
+            color: azure;
+            background-color: #023047;
+            justify-content: center;
+            gap: 5px;
+            padding: 5px;
+        }
+        .subconjunto{
+            justify-content: center;
+            display: inline-block;}
+    
+    @keyframes ondaAnim {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        header {
+            background:#023047;
+            color:white;
+            padding:20px;
+            text-align:center;
+            position: relative;
+            z-index: 1;
+        }
+        .container {
+            max-width:900px;
+            margin:30px auto;
+            padding:20px;
+            position: relative;
+            z-index:1;
+        }
+
+        .card {
+            background:white;
+            border-radius:16px;
+            padding:24px;
+            margin:20px 0;
+            box-shadow:0 4px 12px #00000022;
+        }
+        .alerta‑baixo {
+            border-left:8px solid #2ec4b6;
+        }
+        .alerta‑medio {
+            border-left:8px solid #ffb703;
+        }
+        .alerta‑alto {
+            border-left:8px solid #fb5607;
+        }
+
+        button {
+            background:#0077b6;
+            color:white;
+            border:none;
+            padding:12px 20px;
+            border-radius:8px;
+            font-size:16px;
+            cursor:pointer;
+            margin:10px 5px;
+        }
+        button:hover {
+            background:#023047;
+        }
+        .cardsnav{
+            display: inline-block;
+            padding: 10px;
+            gap: 10px;
+            background-color: #40697e;
+            border: #2ec4b6;
+            border-radius: 5px;
+            border-width: 5px;
+            
+          
+        }
+
+        .cardsnav a {
+            color: white;
+            font-size: 20px;
+        }
+        .nav-bar{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding-top: 10px;
+        }
